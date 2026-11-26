@@ -1,0 +1,43 @@
+# Local build tools, fixtures, reports and screenshots
+/.agent-artifacts/
+
+# Distributable packages (generate with build/Package.ps1)
+/release/
+
+# .NET build and publish output
+**/bin/
+**/obj/
+**/TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+*.binlog
+
+# IDE and machine-local configuration
+.vs/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Credentials and local provider settings (never commit API keys)
+.env
+.env.*
+!.env.example
+settings.json
+settings.local.json
+appsettings.*.local.json
+*.pfx
+*.p12
+*.key
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
+*.bak
+*~
